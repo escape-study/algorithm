@@ -1,4 +1,4 @@
-<h1 align="center"> <img src=""> </h1>
+<h1 align="center"> <img src="https://github.com/escape-study/algorithm/assets/56991244/34494fd6-be31-479e-bc04-f9944d96cead"> </h1>
 
 # ✏️ **코테 대비 알고리즘 인증 스터디**
 
