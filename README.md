@@ -11,6 +11,8 @@
 
 * [**커밋 메시지 작성 규칙**](https://github.com/escape-study/algorithm/wiki/Commit-Message-Rule)
 
+* [**문제 선정 규칙**]()
+
 | |1|2|3|4|
 |:-:|:-:|:-:|:-:|:-:|
 |1주차(23.08.07 ~ 23.08.13)|-|-|-|-|
