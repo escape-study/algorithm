@@ -13,6 +13,6 @@
 
 * [**문제 선정 규칙**](https://github.com/escape-study/algorithm/wiki/%EB%AC%B8%EC%A0%9C-%EC%84%A0%EC%A0%95)
 
-| |1|2|3|4|
+| |DP|그래프 or 백트래킹|빡구현|특수유형|
 |:-:|:-:|:-:|:-:|:-:|
 |1주차(23.08.07 ~ 23.08.13)|[BOJ1106 호텔](https://www.acmicpc.net/problem/1106)|[BOJ9663 N-Queen](https://www.acmicpc.net/problem/9663)|[BOJ21608 상어 초등학교](https://www.acmicpc.net/problem/21608)|[BOJ3020 개똥벌레](https://www.acmicpc.net/problem/3020)|
