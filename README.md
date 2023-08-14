@@ -16,3 +16,4 @@
 | |DP|그래프 or 백트래킹|빡구현|특수유형|
 |:-:|:-:|:-:|:-:|:-:|
 |1주차(23.08.07 ~ 23.08.13)|[BOJ1106 호텔](https://www.acmicpc.net/problem/1106)|[BOJ9663 N-Queen](https://www.acmicpc.net/problem/9663)|[BOJ21608 상어 초등학교](https://www.acmicpc.net/problem/21608)|[BOJ3020 개똥벌레](https://www.acmicpc.net/problem/3020)|
+|2주차(23.08.14 ~ 23.08.20)|[BOJ9251 LCS](https://www.acmicpc.net/problem/9251)|[BOJ6087 레이저](https://www.acmicpc.net/problem/6087)|[BOJ11559 puyo puyo](https://www.acmicpc.net/problem/11559)|[BOJ2470 두 용액](https://www.acmicpc.net/problem/2470)|
