@@ -24,7 +24,6 @@ public class Main_1520 {
             }
         }
 
-        int answer = 0;
         dp = new int[M][N];
         for (int i = 0; i < M; i++) {
             Arrays.fill(dp[i], -1);
