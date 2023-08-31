@@ -81,7 +81,7 @@ public class BOJ1306_달려라홍준_pq풀이 {
         int start = 0;
         int end = 0;
 
-        //목표위치가 시작위치보다 클때.
+        //목표위치가 시작위치보다 클때 - 인덱스가 증가하는 방향으로
         for(int index = startLocation + 1; index <= targetLocation; index++){
 
             start = index - (M - 1);
