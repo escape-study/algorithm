@@ -21,7 +21,6 @@ public class BOJ2580_스도쿠 {
     //좌표를 저장할 객체
     private static class Node{
         private int x, y;
-
         public Node(int x, int y){
             this.x = x;
             this.y = y;
