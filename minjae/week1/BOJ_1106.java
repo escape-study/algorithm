@@ -3,10 +3,9 @@ package week1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PipedReader;
 import java.util.*;
 
-public class Main {
+public class BOJ_1106 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringTokenizer st;
 
