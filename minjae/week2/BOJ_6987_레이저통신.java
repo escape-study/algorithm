@@ -1,3 +1,5 @@
+package week2;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class BOJ_6987_레이저통신 {
     static int N, M;
     static int delta[][] = {{1,0},{0,1},{-1,0},{0,-1}};
     static char Map[][];
