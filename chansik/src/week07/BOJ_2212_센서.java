@@ -25,12 +25,11 @@ public class BOJ_2212_센서 {
         int[] dist = new int[arr.length-1];
         for(int i=1;i<arr.length;i++) dist[i-1] = arr[i] - arr[i-1];
         Arrays.sort(dist);
-        System.out.println(Arrays.toString(dist));
         int sum = Arrays.stream(dist).sum();
         for(int index=dist.length-1, count=k-1;count>0;count--,index--) {
             if (index < 0) break;
             sum -= dist[index];
         }
-        System.out.println(sum);
+        System.out.print(sum);
     }
 }
