@@ -1,11 +1,11 @@
-import org.w3c.dom.Node;
+package week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class BOJ_21608_상어초등학교 {
 
     static int delta[][] = {{1,0},{0,1},{-1,0},{0,-1}};
     static int student[][], Map[][], N;

@@ -8,13 +8,9 @@ public class BOJ_2011_암호코드 {
     static int Max , Map[], DP[];
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         String s = br.readLine();
-
         Map = new int [s.length()+1];
         DP = new int [s.length()+1];
-
-
         for(int i = 0 ; i< s.length() ; i++){
             Map[i] = s.charAt(i) - '0';
             if(Map[i] < 0 || Map[i] > 9) return;
@@ -27,7 +23,6 @@ public class BOJ_2011_암호코드 {
 
         DP[0] = 1;
         DP[1] = 1;
-
         for(int i=1; i<s.length(); i++) {
             char pri = s.charAt(i - 1);
             if(s.charAt(i) >= '1' && s.charAt(i)<='9'){
@@ -39,10 +34,7 @@ public class BOJ_2011_암호코드 {
                 DP[i+1]%=1000000;
             }
             DP[i + 1] %= 1000000000;
-
         }
-
         System.out.println(DP[s.length()]%1000000000);
-
     }
 }

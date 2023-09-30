@@ -1,9 +1,11 @@
+package week2;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class BOJ_11559_puyopuyo {
     static int N, M;
     static int delta[][] = {{1,0},{0,1},{-1,0},{0,-1}};
     static char Map[][];
