@@ -1,4 +1,4 @@
-package week08;
+package soyeonLim.week08;
 
 import java.io.BufferedReader;
 import java.io.IOException;
