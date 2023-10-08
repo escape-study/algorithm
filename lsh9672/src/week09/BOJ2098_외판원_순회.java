@@ -2,6 +2,7 @@ package week09;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
@@ -63,16 +64,11 @@ public class BOJ2098_외판원_순회 {
 
         for(int nextNode = 0; nextNode < N; nextNode++) {
 
-            int nextPath = currentPath | (1 << nextNode);
-
-            //자기자신이거나 갈수 없는 곳이면 패스
-            if (costArray[currentNode][nextNode] == 0 || visited[nextNode][nextPath] == INF) continue;
-
-            //다음위치가 이미 탐색한 곳이라면 패스
-            if (((1 << nextNode) & currentPath) != 0) continue;
+            //갈수 없는 곳이라면(방문한곳이거나, 도달 불가능한 곳이거나)
+            if (((1 << nextNode) & currentPath) != 0 || costArray[currentNode][nextNode] == 0) continue;
 
             //다음 노드 재귀로 탐색.
-            int tempCost =  dfs(nextNode, nextPath, startNode);
+            int tempCost =  dfs(nextNode, currentPath | (1 << nextNode), startNode);
 
             //현재 위치에 저장된 값이 없으면 재귀호출에서 반환된 값 저장.
             if(visited[currentNode][currentPath] == 0){
@@ -96,6 +92,7 @@ public class BOJ2098_외판원_순회 {
 
         return visited[currentNode][currentPath];
     }
+
 
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
