@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main_1644 {
+public class Main {
     static int n;
     static List<Integer> primeList = new ArrayList<>();    // n 이하의 소수 리스트
 
@@ -57,23 +57,22 @@ public class Main_1644 {
      * n 이하의 소수 탐색
      */
     private static void findPrimes() {
-        for (int i = 2; i <= n; i++) {
-            if (isPrime(i)) {
-                primeList.add(i);
+        boolean[] primeCheck = new boolean[n + 1];
+
+        for(int i = 2; i <= Math.sqrt(n); i++){
+
+            if(primeCheck[i]) continue;
+
+            for(int j = i*2; j <= n; j += i){
+                primeCheck[j] = true;
             }
+        }
+
+
+        for(int i = 2; i <= n; i++){
+            if(primeCheck[i]) continue;
+
+            primeList.add(i);
         }
     }   // end of findPrimes
-
-    /**
-     * 소수인지 판별
-     */
-    private static boolean isPrime(int n) {
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-
-        return true;
-    }   // end of isPrime
 }
