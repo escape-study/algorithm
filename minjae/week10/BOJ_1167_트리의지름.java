@@ -47,11 +47,9 @@ public class BOJ_1167_트리의지름{
 //        checked[node] = true;
 //        dfs(node , 0 , checked);
 //
-        bfs(1);
 
-        bfs(node);
 
-        System.out.println(Max);
+
 
 
 
