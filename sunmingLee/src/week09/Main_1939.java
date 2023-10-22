@@ -3,17 +3,12 @@ import java.util.*;
 import java.util.StringTokenizer;
 
 public class Main_1939 {
-    static class Node implements Comparable<Node> {
+    static class Node {
         int num, weight;
 
         public Node(int num, int weight) {
             this.num = num;
             this.weight = weight;
-        }
-
-        @Override
-        public int compareTo(Node o) {
-            return o.weight - this.weight;
         }
     }
 
@@ -48,10 +43,6 @@ public class Main_1939 {
         st = new StringTokenizer(br.readLine(), " ");
         start = Integer.parseInt(st.nextToken());
         end = Integer.parseInt(st.nextToken());
-
-        for (int i = 1; i < adjList.length; i++) {
-            Collections.sort(adjList[i]);
-        }
 
         int low = 0, high = max;
         while (low <= high) {
