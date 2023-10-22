@@ -65,6 +65,7 @@ public class BOJ1700_멀티탭_스케줄링 {
                     }
                 }
 
+
                 //선정한 뽑을 노드 제거.
                 multiTab.remove(tempNode);
                 result++;
