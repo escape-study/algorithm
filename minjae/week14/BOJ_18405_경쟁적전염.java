@@ -1,13 +1,11 @@
 package week14;
 
-import org.w3c.dom.Node;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class BOJ_18405_경쟁적전염{
+public class BOJ_18405_경쟁적전염 {
     /*
     *
     *   bfs로 각 초마다 큐에 있던 값을 다른 큐에 저장하고 다음 초에 번갈아가면서 큐에 있는 값으로 bfs를 진행
