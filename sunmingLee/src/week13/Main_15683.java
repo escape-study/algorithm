@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class Main_15683 {
     static class CCTV {
         int r, c;
         int type;
