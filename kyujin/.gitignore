@@ -27,3 +27,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+AlgoStudy.iml
+.idea
+Algo.iml
