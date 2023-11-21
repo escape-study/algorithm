@@ -31,3 +31,5 @@ bin/
 AlgoStudy.iml
 .idea
 Algo.iml
+
+.gitignore
