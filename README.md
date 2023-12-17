@@ -34,3 +34,4 @@
 |17주차(23.11.27 ~ 23.12.03)|[BOJ10942 팰린드롬?](https://www.acmicpc.net/problem/10942)|[BOJ14502 연구소](https://www.acmicpc.net/problem/14502)|[BOJ17144 미세먼지 안녕!](https://www.acmicpc.net/problem/17144)|[BOJ2109 빵집](https://www.acmicpc.net/problem/3109)|
 |18주차(23.12.04 ~ 23.12.10)|[BOJ11066 파일합치기](https://www.acmicpc.net/problem/11066)|[BOJ1781 컵라면](https://www.acmicpc.net/problem/1781)|[BOJ1976 여행 가자](https://www.acmicpc.net/problem/1976)|[BOJ2931 가스관](https://www.acmicpc.net/problem/2931)|
 |19주차(23.12.11 ~ 23.12.17)|-|휴|-|무|
+|20주차(23.12.18 ~ 23.12.24)|[Programmers - 표현가능한 이진트리](https://school.programmers.co.kr/learn/courses/30/lessons/150367)|[Programmers - 쿠키구입](https://school.programmers.co.kr/learn/courses/30/lessons/49995)|[Programmers - 거스름돈](https://school.programmers.co.kr/learn/courses/30/lessons/12907)|[Programmers - 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)| 
