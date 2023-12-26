@@ -90,14 +90,4 @@ public class Prog_표현가능한_이진트리 {
 
         return answer;
     }
-    public static void main(String[] args) {
-        Prog_표현가능한_이진트리 s = new Prog_표현가능한_이진트리();
-        long[] number1 = {7,42,5};
-        System.out.println(Arrays.toString(s.solution(number1)));
-
-        long[] number2 = {63,111,95};
-        System.out.println(Arrays.toString(s.solution(number2)));
-
-
-    }
 }
