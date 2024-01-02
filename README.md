@@ -36,3 +36,4 @@
 |19주차(23.12.11 ~ 23.12.17)|-|휴|-|무|
 |20주차(23.12.18 ~ 23.12.24)|[Programmers - 표현가능한 이진트리](https://school.programmers.co.kr/learn/courses/30/lessons/150367)|[Programmers - 쿠키구입](https://school.programmers.co.kr/learn/courses/30/lessons/49995)|[Programmers - 거스름돈](https://school.programmers.co.kr/learn/courses/30/lessons/12907)|[Programmers - 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)| 
 |21주차(23.12.25 ~ 23.12.31)|[BOJ2616 소형기관차](https://www.acmicpc.net/problem/2616)|[BOJ2457 공주님의 정원](https://www.acmicpc.net/problem/2457)|[BOJ1103 게임](https://www.acmicpc.net/problem/1103)|[BOJ2933 미네랄](https://www.acmicpc.net/problem/2933)
+|22주차(24.01.01 ~ 24.01.07)|[숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923)|[불량 사용자](https://school.programmers.co.kr/learn/courses/30/lessons/64064)|[행렬 테두리 회전](https://school.programmers.co.kr/learn/courses/30/lessons/77485)|[BOJ1256 사전](https://www.acmicpc.net/problem/1256)
