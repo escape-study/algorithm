@@ -3,25 +3,41 @@ package week24;
 
 import java.util.*;
 
-    public class PROG_숫자게임 {
-        public int solution(int[] A, int[] B) {
+    public class PROG_k진수숫자구하기 {
 
-            Arrays.sort(A);
+        public boolean init(long n){
+            if(n == 1) return false;
+            long a = (long)Math.sqrt(n) + 1;
 
-            Arrays.sort(B);
-
-            int a = 0;
-            int b = 0;
-            int sum =0;
-            while(a < A.length && b < B.length){
-                if(A[a] >= B[b]){
-                    b++;
-                }else{
-                    a++;
-                    b++;
-                    sum++;
-                }
+            for (int i = 2; i < a ;i++){
+                if (n % i == 0) return false;
             }
-            return sum;
+            return true;
+        }
+        public int solution(int n , int k) {
+            int answer = 0;
+            StringBuilder sb = new StringBuilder();
+            while ( n != 0){
+                sb.append(n%k);
+                n = n/k;
+            }
+            String s = sb.reverse().toString();
+
+            String sp[] = s.split("0");
+
+            for (String now : sp){
+
+                if (now.length() == 0) continue;
+                long num = Long.parseLong(now);
+
+                if(init(num)){
+
+                    answer++;
+                }
+
+            }
+
+
+            return answer;
         }
 }
