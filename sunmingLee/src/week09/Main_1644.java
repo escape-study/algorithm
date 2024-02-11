@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class Main_1644 {
     static int n;
     static List<Integer> primeList = new ArrayList<>();    // n 이하의 소수 리스트
 
