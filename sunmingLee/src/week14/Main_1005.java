@@ -8,7 +8,7 @@ import java.util.*;
  * Di가 0부터 시작이라 시간초과남
  * -> 방문처리해서 통과
  */
-public class Main {
+public class Main_1005 {
 
     static int T, N, K, W;
     static int[] buildTime, dp;

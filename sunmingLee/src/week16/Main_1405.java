@@ -5,7 +5,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_1405 {
     final static int[] dr = {0, 0, 1, -1}; // 동서남북순
     final static int[] dc = {1, -1, 0, 0};
     static int n, len;
