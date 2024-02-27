@@ -1,208 +1,126 @@
 package week29;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.StringTokenizer;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 public class BOJ_17780_새로운게임 {
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static final int WHITE = 0, RED = 1, BLUE = 2;
+    static final int[] change = { 1, 0, 3, 2 };
+    // →, ←, ↑, ↓
+    static final int[] dr = { 0, 0, -1, 1 };
+    static final int[] dc = { 1, -1, 0, 0 };
 
-    static StringTokenizer st;
-    static class Node{
-        int num;
-        int x;
-        int y;
+    static int N, K;
+    static int[][] map;
+    static LinkedList<Integer>[][] state;
+    static Horse[] horses;
 
-        int dir;
-        Node front;
-        Node back;
+    static class Horse {
+        int r, c, dir;
 
-        Node(int num ,int x , int y, int dir){
-            this.num = num;
-            this.x = x;
-            this.y = y;
+        Horse(int r, int c, int dir) {
+            this.r = r;
+            this.c = c;
             this.dir = dir;
         }
     }
 
-    static int delta[][] = {{}, {0,1} , {0,-1}, {-1, 0}, {1, 0}};
-    static List<Node> list;
-    static boolean[] isFirst;
-    static int Map[][];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        N = sc.nextInt(); // 체스판의 크기 N
+        K = sc.nextInt(); // 말의 개수 K
 
-    public static void main(String[] args) throws IOException {
-        st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int K = Integer.parseInt(st.nextToken());
+        map = new int[N][N]; // 체스판 색상 정보
+        state = new LinkedList[N][N]; // 체스판에 쌓인 말의 순서
 
-        Map = new int[N+1][N+1];
-
-        for (int i = 1; i <= N ; i++) {
-            st = new StringTokenizer(br.readLine());
-            for (int j = 1; j <= N; j++) {
-                Map[i][j] = Integer.parseInt(st.nextToken());
+        // 체스판의 정보
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                map[i][j] = sc.nextInt();
+                state[i][j] = new LinkedList<>();
             }
         }
-        list = new ArrayList<>();
-        for (int i = 0; i < K;  i++) {
-            st = new StringTokenizer(br.readLine());
-            list.add(new Node(i, Integer.parseInt(st.nextToken()) , Integer.parseInt(st.nextToken()) , Integer.parseInt(st.nextToken())));
+
+        // 말의 정보
+        horses = new Horse[K + 1]; // 1 ~ K번 말
+        for (int i = 1; i <= K; i++) {
+            int r = sc.nextInt() - 1;
+            int c = sc.nextInt() - 1;
+            int dir = sc.nextInt() - 1;
+            horses[i] = new Horse(r, c, dir);
+            state[r][c].add(i);
         }
-        int cnt = 0;
-        isFirst = new boolean[list.size()];
-        while (true){
-            cnt++;
 
-            for (int i = 0; i < list.size(); i++) {
-                if(isFirst[i]) continue;
+        System.out.println(start());
 
-                Node now = list.get(i);
+    }
 
-                int nextX = now.x + delta[now.dir][0];
-                int nextY = now.y + delta[now.dir][1];
+    private static int start() {
+        boolean flag = true;
+        int times = 0;
+        while (flag) {
+            times++;
+            if (times > 1000)
+                break;
 
-                if(nextX < 1 || nextX > N || nextY < 1 || nextY > N || Map[nextX][nextY] == 2){
-                    blue(now);
-                } else if(Map[nextX][nextY] == 0){  // 흰색
-                    white(nextX, nextY, now);
-                } else if (Map[nextX][nextY] == 1) {  // 빨간색
-                    red(nextX, nextY , now);
+            for (int i = 1; i <= K; i++) {
+                Horse h = horses[i];
+                int r = h.r;
+                int c = h.c;
+
+                // 가장 아래쪽 말이 아니라면 PASS
+                if (state[r][c].get(0) != i)
+                    continue;
+
+                int nr = r + dr[h.dir];
+                int nc = c + dc[h.dir];
+
+                // 말이 이동하려는 칸이 파란색인 경우 + 체스판을 벗어나는 경우
+                if (!isRange(nr, nc) || map[nr][nc] == BLUE) {
+                    // 방향 반대로
+                    h.dir = change[h.dir];
+                    nr = r + dr[h.dir];
+                    nc = c + dc[h.dir];
                 }
 
-            }
-
-            if(cnt > 1000){
-                System.out.println(-1);
-                return;
-            }
-            for (int i = 0; i < list.size(); i++) {
-                if(!isFirst[i]){
-                    int k = 1;
-                    for (Node n = list.get(i); n.back != null; n = n.back) {
-                        k++;
+                // 방향을 반대로 한 후에 이동하려는 칸이 파란색인 경우
+                if (!isRange(nr, nc) || map[nr][nc] == BLUE) {
+                    continue;
+                }
+                // 말이 이동하려는 칸이 빨간색인 경우
+                else if (map[nr][nc] == RED) {
+                    // 순서를 반대로 모든 말이 이동
+                    for (int j = state[r][c].size() - 1; j >= 0; j--) {
+                        int tmp = state[r][c].get(j);
+                        state[nr][nc].add(tmp);
+                        horses[tmp].r = nr;
+                        horses[tmp].c = nc;
                     }
-
-                    if(k >= 4){
-                        System.out.println(cnt);
-                        return;
+                    state[r][c].clear();
+                }
+                // 말이 이동하려는 칸이 흰색인 경우
+                else {
+                    // 모든 말이 이동
+                    for (int j = 0; j < state[r][c].size(); j++) {
+                        int tmp = state[r][c].get(j);
+                        state[nr][nc].add(tmp);
+                        horses[tmp].r = nr;
+                        horses[tmp].c = nc;
                     }
+                    state[r][c].clear();
+                }
 
+                // 이동한 곳에 말이 4개 이상 있는가?
+                if (state[nr][nc].size() >= 4) {
+                    flag = false;
+                    break;
                 }
             }
-
-
         }
-
-    }
-    public static void white(int nextX , int nextY , Node now){
-        int[] front_back = up(nextX, nextY, now.num);
-        now.x = nextX;
-        now.y = nextY;
-        if(front_back[0] != -1){
-            isFirst[now.num] = true;
-            now.front = list.get(front_back[1]);
-            list.get(front_back[1]).back = now;
-        }
-    }
-    public static void red(int nextX , int nextY , Node now){
-
-        int[] front_back = up(nextX, nextY, now.num);
-        Node j = now;
-        while (true){
-            Node front = j.front;
-            Node back = j.back;
-
-            j.x = nextX;
-            j.y = nextY;
-
-            j.front = back;
-            j.back = front;
-
-            if(back == null) break;
-            j = back;
-        }
-        isFirst[now.num] = true;
-        isFirst[j.num] = false;
-
-        if(front_back[0] != -1){
-            isFirst[j.num] = true;
-            j.front = list.get(front_back[1]);
-            list.get(front_back[1]).back = j;
-        }
+        return flag ? -1 : times;
     }
 
-    public static void blue(Node now ){
-        now.dir = changeDir(now.dir);
-        int nextX = now.x + delta[now.dir][0];
-        int nextY = now.y + delta[now.dir][1];
-
-        if(nextX < 1 || nextX > Map.length|| nextY < 1 || nextY > Map.length || Map[nextX][nextY] == 2){
-            return;
-        }else if( Map[nextX][nextY] == 0){
-            white(nextX, nextY , now);
-        }else if( Map[nextX][nextY] == 1){
-            red(nextX, nextY , now);
-        }
+    static boolean isRange(int r, int c) {
+        return 0 <= r && r < N && 0 <= c && c < N;
     }
-
-    public static int changeDir(int dir){
-        int result = -1;
-        switch (dir){
-            case 1:
-                result = 2;
-                break;
-            case 2:
-                result = 1;
-                break;
-            case 3:
-                result = 4;
-                break;
-            case 4:
-                result = 3;
-                break;
-        }
-        return result;
-    }
-    public static int[] up(int nextX , int nextY , int i){
-
-        boolean isChecked[] = new boolean[list.size()];
-
-        for (Node j = list.get(i); j.back != null; j = j.back) {
-            isChecked[j.num] = true;
-        }
-
-
-        int check = -1;
-        for (int j = 0; j < list.size(); j++) {
-            if(isChecked[j]) continue;
-            Node now = list.get(j);
-            if(now.x == nextX && now.y == nextY){
-                check = j;
-                break;
-            }
-        }
-
-        if(check == -1){
-            return new int[] {-1};
-        }
-
-        int front = check;
-        int back = check;
-        for (Node j = list.get(check); j.front != null; j = j.front) {
-            front = j.num;
-        }
-
-        for (Node j = list.get(front); j.back != null; j = j.back) {
-            back = j.num;
-
-        }
-
-        return new int [] {front , back};
-
-    }
-
 }
