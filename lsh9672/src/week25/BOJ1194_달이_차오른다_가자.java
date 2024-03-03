@@ -96,11 +96,10 @@ public class BOJ1194_달이_차오른다_가자 {
                 //격자판을 벗어나거나 벽이면 패스
                 if(!check(nextX, nextY) || maps[nextX][nextY] == '#') continue;
 
-                int nextStatus = currentNode.status | alphaMap.get(maps[nextX][nextY]);
-
                 //대문자이고 열쇠를 가지고 있지 않거나, 방문했다면 패스
-                if((Character.isUpperCase(maps[nextX][nextY]) && currentNode.status != nextStatus) || visited[nextX][nextY][currentNode.status]) continue;
+                if((Character.isUpperCase(maps[nextX][nextY]) && ((currentNode.status & alphaMap.get(maps[nextX][nextY])) != alphaMap.get(maps[nextX][nextY]))) || visited[nextX][nextY][currentNode.status]) continue;
 
+                int nextStatus = currentNode.status | alphaMap.get(maps[nextX][nextY]);
                 //방문처리 후 다음 큐에 넣기
                 visited[nextX][nextY][currentNode.status] = true;
                 needVisited.add(new Node(nextX, nextY, nextStatus, currentNode.distance + 1));
