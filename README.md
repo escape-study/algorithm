@@ -52,4 +52,4 @@
 |35주차(24.04.01 ~ 24.04.07)|-|휴|-|무|
 |36주차(24.04.08 ~ 23.04.14)|-|휴|-|무|
 |37주차(24.04.15 ~ 23.04.21)|[BOJ5571 1학년](https://www.acmicpc.net/problem/5557)|[BOJ3151 합이0](https://www.acmicpc.net/problem/3151)|[Prog 거리두기확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302)|[Prog 후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
-
+|36주차(24.04.22 ~ 23.04.28)|-|휴|-|무|
