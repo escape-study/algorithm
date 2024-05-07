@@ -50,6 +50,9 @@
 |33주차(24.03.18 ~ 24.03.24)|[배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)|[어항정리](https://www.acmicpc.net/problem/23291)|[미로탈출명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)|[표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366)|
 |34주차(24.03.25 ~ 24.03.31)|[등산코스정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)|[부분합](https://www.acmicpc.net/problem/1806)|[뉴스 전하기](https://www.acmicpc.net/problem/1135)|[전시장](https://www.acmicpc.net/problem/2515)
 |35주차(24.04.01 ~ 24.04.07)|-|휴|-|무|
-|36주차(24.04.08 ~ 23.04.14)|-|휴|-|무|
-|37주차(24.04.15 ~ 23.04.21)|[BOJ5571 1학년](https://www.acmicpc.net/problem/5557)|[BOJ3151 합이0](https://www.acmicpc.net/problem/3151)|[Prog 거리두기확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302)|[Prog 후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
-|36주차(24.04.22 ~ 23.04.28)|-|휴|-|무|
+|36주차(24.04.08 ~ 24.04.14)|-|휴|-|무|
+|37주차(24.04.15 ~ 24.04.21)|[BOJ5571 1학년](https://www.acmicpc.net/problem/5557)|[BOJ3151 합이0](https://www.acmicpc.net/problem/3151)|[Prog 거리두기확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302)|[Prog 후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
+|38주차(24.04.22 ~ 24.04.28)|-|휴|-|무|
+|39주차(24.04.29 ~ 24.05.05)|-|휴|-|무|
+|40주차(24.05.06 ~ 23.05.12)|[BOJ9252 LCS 2](https://www.acmicpc.net/problem/9252)|[BOJ17090 미로 탈출하기](https://www.acmicpc.net/problem/17090 )|[Prog 석유 시추](https://school.programmers.co.kr/learn/courses/30/lessons/250136)|[Prog 요격시스템](https://school.programmers.co.kr/learn/courses/30/lessons/181188)
+
