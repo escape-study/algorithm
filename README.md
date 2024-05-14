@@ -55,4 +55,4 @@
 |38주차(24.04.22 ~ 24.04.28)|-|휴|-|무|
 |39주차(24.04.29 ~ 24.05.05)|-|휴|-|무|
 |40주차(24.05.06 ~ 23.05.12)|[BOJ9252 LCS 2](https://www.acmicpc.net/problem/9252)|[BOJ17090 미로 탈출하기](https://www.acmicpc.net/problem/17090 )|[Prog 석유 시추](https://school.programmers.co.kr/learn/courses/30/lessons/250136)|[Prog 요격시스템](https://school.programmers.co.kr/learn/courses/30/lessons/181188)
-
+|41주차(24.05.13 ~ 23.05.19)|[Prog 당구연습](https://school.programmers.co.kr/learn/courses/30/lessons/169198)|[Prog 과제진행하기](https://school.programmers.co.kr/learn/courses/30/lessons/176962)|[Prog 리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199)|[Prog 호텔 대실](https://school.programmers.co.kr/learn/courses/30/lessons/155651)
