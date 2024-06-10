@@ -59,4 +59,6 @@
 |42주차(24.05.20 ~ 24.05.26)|[BOJ13904 과제](https://www.acmicpc.net/problem/13904)|[BOJ1948 임계경로](https://www.acmicpc.net/problem/1948)|[Prog 쿼드압축 후 개수세기](https://school.programmers.co.kr/learn/courses/30/lessons/68936)|[Prog 할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
 |43주차(24.05.27 ~ 24.06.02)|[Prog 광물캐기](https://school.programmers.co.kr/learn/courses/30/lessons/172927)|[Prog 두 원사이의 정수 쌍](https://school.programmers.co.kr/learn/courses/30/lessons/181187)|[Prog 미로탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993)|[BOJ1082 방번호](https://www.acmicpc.net/problem/1082)
 |44주차(24.06.03 ~ 24.06.09)|[Prog 무인도여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540)|[Prog 인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)|[Prog 테이블 해시 함수](https://school.programmers.co.kr/learn/courses/30/lessons/147354)|[BOJ20303 할로윈의 양아치](https://www.acmicpc.net/problem/20303)
+|45주차(24.06.10 ~ 24.06.16)|[Prog 시소짝꿍](https://school.programmers.co.kr/learn/courses/30/lessons/152996)|[Prog 부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266)|[Prog 보행자 천국](https://school.programmers.co.kr/learn/courses/30/lessons/1832)|[BOJ1132 합](https://www.acmicpc.net/problem/1132)
+
 
