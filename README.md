@@ -61,6 +61,5 @@
 |44주차(24.06.03 ~ 24.06.09)|[Prog 무인도여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540)|[Prog 인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)|[Prog 테이블 해시 함수](https://school.programmers.co.kr/learn/courses/30/lessons/147354)|[BOJ20303 할로윈의 양아치](https://www.acmicpc.net/problem/20303)
 |45주차(24.06.10 ~ 24.06.16)|[Prog 시소짝꿍](https://school.programmers.co.kr/learn/courses/30/lessons/152996)|[Prog 부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266)|[Prog 보행자 천국](https://school.programmers.co.kr/learn/courses/30/lessons/1832)|[BOJ1132 합](https://www.acmicpc.net/problem/1132)
 |46주차(24.06.17 ~ 24.06.23|[Prog 아이템줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)|[Prog 110 옮기기](https://school.programmers.co.kr/learn/courses/30/lessons/77886)|[BOJ2169 로봇 조종하기](https://www.acmicpc.net/problem/2169)|[BOJ2632 피자판매](https://www.acmicpc.net/problem/2632)
-
-
+|47주차(24.06.24 ~ 24.06.30)|[Prog 귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)|[Prog 연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701)|[BOJ1949 우수마을](https://www.acmicpc.net/problem/1949)|[BOJ10800 컬러볼](https://www.acmicpc.net/problem/10800)
 
