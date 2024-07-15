@@ -64,4 +64,5 @@
 |47주차(24.06.24 ~ 24.06.30)|[Prog 귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)|[Prog 연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701)|[BOJ1949 우수마을](https://www.acmicpc.net/problem/1949)|[BOJ10800 컬러볼](https://www.acmicpc.net/problem/10800)
 |48주차(24.07.01 ~ 24.07.07)|[Prog 롤 케이크 자르기](https://school.programmers.co.kr/learn/courses/30/lessons/132265)|[Prog 디펜스 게임](https://school.programmers.co.kr/learn/courses/30/lessons/142085)|[Prog 우박수열 정적분](https://school.programmers.co.kr/learn/courses/30/lessons/134239)|[BOJ7570 줄 세우기](https://www.acmicpc.net/problem/7570)
 |49주차(24.07.08 ~ 24.07.14)|-|휴|-|무|
+|49주차(24.07.15 ~ 24.07.21)|[Prog 혼자 놀기의 달인](https://school.programmers.co.kr/learn/courses/30/lessons/131130)|[Prog 점찍기](https://school.programmers.co.kr/learn/courses/30/lessons/140107)|[BOJ10775 공항](https://www.acmicpc.net/problem/10775)|[BOJ2637 장난감 조립](https://www.acmicpc.net/problem/2637)
 
