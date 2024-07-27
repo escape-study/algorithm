@@ -1,4 +1,4 @@
-package week50;
+package week49;
 
 /**
  * 아이디어
