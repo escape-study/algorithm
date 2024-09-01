@@ -71,4 +71,5 @@
 |53주차(24.08.12 ~ 24.08.19)|-|휴|-|무|
 |54주차(24.08.20 ~ 24.08.25)|-|휴|-|무|
 |55주차(24.08.26 ~ 24.09.01)|-|휴|-|무|
+|56주차(24.09.02 ~ 24.09.08)|[BOJ9370 미확인 도착지](https://www.acmicpc.net/problem/9370)|[Prog 등대](https://school.programmers.co.kr/learn/courses/30/lessons/133500)|[Prog 단체사진 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/1835)|[Prog 아날로그 시계](https://school.programmers.co.kr/learn/courses/30/lessons/250135)
 
