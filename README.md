@@ -70,3 +70,5 @@
 |52주차(24.08.05 ~ 24.08.11)|[BOJ2533 사회망 서비스(SNS)](https://www.acmicpc.net/problem/2533)|[1493 박스 채우기](https://www.acmicpc.net/problem/1493)|[Prog 뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)|[Prog 짝지어 제거하기](https://school.programmers.co.kr/learn/courses/30/lessons/12973)
 |53주차(24.08.12 ~ 24.08.19)|-|휴|-|무|
 |54주차(24.08.20 ~ 24.08.25)|-|휴|-|무|
+|55주차(24.08.26 ~ 24.09.01)|-|휴|-|무|
+
