@@ -73,4 +73,5 @@
 |55주차(24.08.26 ~ 24.09.01)|-|휴|-|무|
 |56주차(24.09.02 ~ 24.09.08)|[BOJ9370 미확인 도착지](https://www.acmicpc.net/problem/9370)|[Prog 등대](https://school.programmers.co.kr/learn/courses/30/lessons/133500)|[Prog 단체사진 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/1835)|[Prog 아날로그 시계](https://school.programmers.co.kr/learn/courses/30/lessons/250135)
 |57주차(24.09.09 ~ 24.09.15)|[BOJ11054 가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)|[BOJ6086 최대유량](https://www.acmicpc.net/problem/6086)|[BOJ16947 서울 지하철 2호선](https://www.acmicpc.net/problem/16947)|[BOJ2352 반도체 설계](https://www.acmicpc.net/problem/2352)
+|58주차(24.09.16 ~ 24.09.22)|-|추|-|석|
 
